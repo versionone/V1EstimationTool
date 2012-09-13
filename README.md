@@ -1,9 +1,8 @@
 # V1EstimationTool #
 
-V1TortoiseSVN helps you add Workitem IDs into TortoiseSVN check-in popup by 
-showing a window which lists Stories, Defects, Tasks, and Tests assigned to 
-you. It provides quick access to the workitem's IDs to add to the check-in 
-comment to be read by the VersionOne Subversion Integration (V1SVN).
+The VersionOne Estimation Tool allows you to easily divide VersionOne items 
+into an arbitrary number of groupings or "buckets" and then apply estimate 
+values to all of the items based on which bucket it is in.
 
 This product includes software developed at VersionOne 
 (http://versionone.com/). This product is open source and is licensed 
