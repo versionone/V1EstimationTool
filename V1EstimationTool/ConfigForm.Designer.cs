@@ -107,7 +107,7 @@ namespace V1EstimationTool
             this.btnOK.TabIndex = 7;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            this.btnOK.Click += new System.EventHandler(this.BtnOkClick);
             // 
             // cbIntegratedSecurity
             // 
@@ -155,7 +155,7 @@ namespace V1EstimationTool
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Configuration";
-            this.Load += new System.EventHandler(this.ConfigForm_Load);
+            this.Load += new System.EventHandler(this.ConfigFormLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 

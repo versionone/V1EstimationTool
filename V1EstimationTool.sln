@@ -3,16 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V1EstimationTool", "V1EstimationTool\V1EstimationTool.csproj", "{A91097DE-A36C-4A94-83C5-48286EA00157}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6755DA20-BB1E-4D7A-9647-C1D74B4E09C1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5CE55AAA-945C-402F-A931-CE63706FB241}"
+	ProjectSection(SolutionItems) = preProject
+		DEVELOPING.md = DEVELOPING.md
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A91097DE-A36C-4A94-83C5-48286EA00157}.Debug|x86.ActiveCfg = Debug|x86
-		{A91097DE-A36C-4A94-83C5-48286EA00157}.Debug|x86.Build.0 = Debug|x86
-		{A91097DE-A36C-4A94-83C5-48286EA00157}.Release|x86.ActiveCfg = Release|x86
-		{A91097DE-A36C-4A94-83C5-48286EA00157}.Release|x86.Build.0 = Release|x86
+		{A91097DE-A36C-4A94-83C5-48286EA00157}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A91097DE-A36C-4A94-83C5-48286EA00157}.Debug|x86.Build.0 = Debug|Any CPU
+		{A91097DE-A36C-4A94-83C5-48286EA00157}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -43,7 +43,7 @@ namespace V1EstimationTool
 			this.checkList.Name = "checkList";
 			this.checkList.Size = new System.Drawing.Size(156, 94);
 			this.checkList.TabIndex = 0;
-			this.checkList.SelectedIndexChanged += new System.EventHandler(this.checkList_SelectedIndexChanged);
+			this.checkList.SelectedIndexChanged += new System.EventHandler(this.CheckListSelectedIndexChanged);
 			// 
 			// btnCancel
 			// 
@@ -66,7 +66,7 @@ namespace V1EstimationTool
 			this.btnOK.TabIndex = 2;
 			this.btnOK.Text = "OK";
 			this.btnOK.UseVisualStyleBackColor = true;
-			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+			this.btnOK.Click += new System.EventHandler(this.BtnOkClick);
 			// 
 			// btnRemove
 			// 
@@ -77,7 +77,7 @@ namespace V1EstimationTool
 			this.btnRemove.TabIndex = 3;
 			this.btnRemove.Text = "Remove";
 			this.btnRemove.UseVisualStyleBackColor = true;
-			this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+			this.btnRemove.Click += new System.EventHandler(this.BtnRemoveClick);
 			// 
 			// btnAdd
 			// 
@@ -88,7 +88,7 @@ namespace V1EstimationTool
 			this.btnAdd.TabIndex = 4;
 			this.btnAdd.Text = "Add";
 			this.btnAdd.UseVisualStyleBackColor = true;
-			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+			this.btnAdd.Click += new System.EventHandler(this.BtnAddClick);
 			// 
 			// BucketForm
 			// 
