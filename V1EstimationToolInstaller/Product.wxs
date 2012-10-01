@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="V1EstimationTool" Language="1033" Version="1.0.0.0" Manufacturer="VersionOne"
+           UpgradeCode="48dc066c-97cc-4512-8fa3-52bbe195e075">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+
+        <Directory Id="INSTALLFOLDER" Name="V1EstimationTool">
+          <Component Id="MainExecutable">
+            <File Id="V1EstimationTool.exe" Name="V1EstimationTool.exe"
+                  Source="..\V1EstimationTool\bin\Debug\V1EstimationTool.exe" Vital="yes" KeyPath="yes" DiskId="1" />
+            <Shortcut Id="V1EstimationTool" Directory="ProgramMenuDir" Name="VersionOne Estimation Tool"
+                      WorkingDirectory="INSTALLDIR" Icon="V1EstimationTool.exe" IconIndex="0" Advertise="yes" />
+          </Component>
+          <Component Id="APIClient" Guid="9F08B2D0-E74A-4B8F-A2FD-7F3EB1BD87A2">
+            <File Id="VersionOne.SDK.APIClient.dll" Name="VersionOne.SDK.APIClient.dll"
+                Source="..\V1EstimationTool\bin\Debug\VersionOne.SDK.APIClient.dll" Vital="yes" KeyPath="no" DiskId="1" />
+          </Component>
+          <Component Id="ObjectModel" Guid="B5D9DA88-1A5C-46FB-9696-5DB1ABB7F783">
+            <File Id="VersionOne.SDK.ObjectModel.dll" Name="VersionOne.SDK.ObjectModel.dll"
+              Source="..\V1EstimationTool\bin\Debug\VersionOne.SDK.ObjectModel.dll" Vital="yes" KeyPath="no" DiskId="1" />
+          </Component>
+        </Directory>
+
+        <Directory Id="ProgramMenuFolder" Name="Programs">
+          <Directory Id="ProgramMenuDir" Name="VersionOne">
+            <Component Id="ProgramMenuDir" Guid="267579E9-5D5A-437E-95E4-B9F3C85639A7">
+              <RemoveFolder Id='ProgramMenuDir' On='uninstall' />
+              <RegistryValue Root='HKCU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value=''
+                             KeyPath='yes' />
+            </Component>
+          </Directory>
+        </Directory>
+
+      </Directory>
+    </Directory>
+
+    <Feature Id="ProductFeature" Title="V1EstimationTool" Level="1">
+      <ComponentRef Id="MainExecutable" />
+      <ComponentRef Id="APIClient" />
+      <ComponentRef Id="ObjectModel" />
+      <ComponentRef Id="ProgramMenuDir"/>
+    </Feature>
+
+    <Icon Id="V1EstimationTool.exe" SourceFile="..\V1EstimationTool\bin\Debug\V1EstimationTool.exe" />
+  </Product>
+</Wix>

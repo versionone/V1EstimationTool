@@ -1,5 +1,10 @@
 # Developing with V1EstimationTool #
 
+## Dependencies ##
+The installer is created using WiX Toolset. The latest WiX download is 
+available from:
+   http://wixtoolset.org/
+
 ## Building from Source ##
 The solution uses NuGet to resolve external dependencies. Use Visual Studio or 
 MS Build to create the EXE.
