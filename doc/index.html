@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>VersionOne Estimation Tool</title>
+<link rel="stylesheet" href="styles/help.css" type="text/css" />
+<link rel="stylesheet" href="styles/pygments_style.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div class="main">
+		<h1>VersionOne Git Integration</h1>
+		<h2>Introduction</h2>
+		<p>The VersionOne Estimation Tool allows you to easily divide 
+			VersionOne items into an arbitrary number of groupings or 
+			&quot;buckets&quot; and then apply estimate values to all of the 
+			items based on which bucket it is in. </p>
+		<h2>Contents</h2>
+		<ul>
+			<li><a href='#V1EstimationTool-SystemRequirements'>System
+					Requirements</a></li>
+			<li><a href='#V1EstimationTool-Download'>Download</a></li>
+			<li><a href='#V1EstimationTool-Configuration'>Configuration</a>
+				<ul>
+					<li><a
+						href='#V1EstimationTool-ConfiguretheIntegration'>Configure
+							the Integration</a></li>
+					<li><a
+						href='#V1EstimationTool-ExampleConfigurationFile'>Example
+							Configuration File</a></li>
+				</ul></li>
+		</ul>
+		<h2>
+			<a name="V1EstimationTool-SystemRequirements"></a>System
+			Requirements
+		</h2>
+		<ul>
+			<li>Windows:
+				<ul>
+					<li>Tested with Windows 7</li>
+				</ul>
+			</li>
+			<li>VersionOne:
+				<ul>
+					<li>7.1 or above, including Team Edition</li>
+				</ul>
+			</li>
+		</ul>
+
+
+		<h2>
+			<a name="V1EstimationTool-Download"></a>Download
+		</h2>
+		<p>The latest version of V1EstimationTool is available from 
+			<a href="http://community.versionone.com/Downloads/default.aspx">the 
+				VersionOne Community site</a>
+		</p>
+
+		<h2>
+			<a name="V1EstimationTool-Configuration"></a>Configuration
+		</h2>
+		<ol>
+			<li>Configure VersionOne Connection
+				<p>When you first run the VersionOne Estimation Tool, click 
+					<kbd>File -> Configure</kbd> and enter the URL and login 
+					credentials for your installation.</p>
+				<p><img src="images/versiononeconnection.jpg" border="0" /></p>
+				<p>Once this is accomplished successfully, click the refresh 
+					button above the project tree on the left to see the 
+					available projects.</p>
+			</li>
+			<li>Configure Estimation Buckets
+				<p>The program defaults to three estimation buckets with values 
+					of 1, 2, and 4. This can be changed by clicking 
+					<kbd>Buckets -> Configure</kbd>. The configuration window that 
+					appears allows you to add and remove the estimate values that 
+					correspond to the buckets.</p>
+				<p><img src="images/configurebuckets.jpg" border="0" /></p>
+			</li>
+		</ol>
+
+		<h2>
+			<a name="V1EstimationTool-Usage"></a>Usage
+		</h2>
+		<ol>
+			<li>Choose Project Scope
+				<p>Selecting a project node on the tree will populate item list 
+					on the bottom right of the window.</p>
+				<p>The Single-Level Project View checkbox will prevent items from 
+					child-projects of the currently selected project in the tree 
+					from being shown in the item list.</p>
+				<p><img src="images/singlelevel.jpg" border="0" /></p>
+			</li>
+			<li>Drag and Drop to Estimate
+				<p>Drag and drop items from the list to the estimate buckets.</p>
+				<p><img src="images/draganddroptobuckets.jpg" border="0" /></p>
+				<p>Once all of the items are in the appropriate buckets, press 
+					the save button on the upper right to apply the estimate values 
+					to the items.</p>
+			</li>
+		</ol>
+			
+	</div>
+</body>
+</html>
