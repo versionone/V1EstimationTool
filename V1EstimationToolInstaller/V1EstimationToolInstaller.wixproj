@@ -15,7 +15,9 @@
     <OutputName>V1EstimationToolInstaller</OutputName>
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(Platform)\$(Configuration)\</IntermediateOutputPath>
-    <DefineConstants>Debug</DefineConstants>
+    <DefineConstants>Debug;ProductVersion=0.0.0</DefineConstants>
+    <WixVariables>
+    </WixVariables>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputName>V1EstimationToolInstaller_$(Platform)_$(ProductVersion)</OutputName>
