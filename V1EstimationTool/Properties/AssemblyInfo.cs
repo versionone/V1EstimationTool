@@ -1,17 +1,19 @@
-﻿using System.Reflection;
+// Stub file: contents are overwritten by build.sh
 
-#if DEBUG
+using System;
+using System.Reflection;
+using System.Resources;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 
-[assembly: AssemblyConfiguration("Debug")]
-#else
-[assembly: AssemblyConfiguration("Release")]
-#endif
+[assembly: AssemblyVersion("0.0.0.0")]
+[assembly: AssemblyFileVersion("0.0.0.0")]
+[assembly: AssemblyInformationalVersion("See https://github.com/versionone/V1EstimationTool/wiki")]
 
-[assembly: AssemblyProduct("V1EstimateTool")]
-[assembly: AssemblyTitle("VersionOne SDK Estimate Tool")]
+[assembly: AssemblyDescription("VersionOne Estimation Tool Dev Build")]
 [assembly: AssemblyCompany("VersionOne, Inc.")]
-[assembly: AssemblyCopyright("Copyright 2012, VersionOne, Inc. Licensed under modified BSD.")]
-[assembly: AssemblyVersion("1.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyInformationalVersion("12.2.1.3584 Summer '12")]
+[assembly: AssemblyProduct("VersionOne Estimation Tool")]
+[assembly: AssemblyTitle("VersionOne Estimation Tool")]
+[assembly: AssemblyCopyright("Copyright 2012-2013, VersionOne, Inc., Licensed under modified BSD.")]
+
+[assembly: AssemblyConfiguration("Dev")]

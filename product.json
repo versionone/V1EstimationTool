@@ -1,0 +1,63 @@
+{
+    "id": "VersionOne.Tools.V1EstimationTool",
+    "titleSection": {
+        "name": "VersionOne Estimation Tool",
+        "shortDescription": "Group workitems into buckets and apply estimate values to all of the items in a bucket.",
+        "pricing": "Free",
+        "support": {
+            "text": "VersionOne",
+            "href": "http://support.versionone.com/home"
+        }
+    },
+    "descriptionSection": {
+        "description": "Divide VersionOne items into an arbitrary number of groupings or "buckets" and then apply estimate values to all of the items based on which bucket it is in."
+    },
+    "linksSection": [
+        {
+            "type": "download",
+            "title": "Download Latest Stable Build",
+            "href": "http://platform.versionone.com.s3.amazonaws.com/downloads/VersionOne.VisualStudio.VSPackage.zip"
+        }
+    ],
+    "updatesSection": {
+        "updates": [
+            {
+                "date": "2013-11-14T00:00:00.000Z",
+                "description": "Winter 2014 Early Access",
+                "version": "4.0.0",
+                "releaseNotes": "Initial release as a distinct product.",
+                "qualityBand": "seed",
+            }
+        ],
+        "qualityBands": {
+            "seed": {
+                "shortDescription": "Early access build. Use with caution.",
+                "href": "https://github.com/versionone/V1EstimationTool/blob/master/CONTRIBUTING.md#seed"
+            },
+            "sapling": {
+                "shortDescription": "The product is undergoing rapid growth. The code works but expect major changes.",
+                "href": "https://github.com/versionone/V1EstimationTool/blob/master/CONTRIBUTING.md#sapling"
+            },
+            "mature": {
+                "shortDescription": "The product is stable. The code will continue to evolve with minimum breaking changes.",
+                "href": "https://github.com/versionone/V1EstimationTool/blob/master/CONTRIBUTING.md#mature"
+            }
+        }
+    },
+    "mediaSection": [
+        {
+            "title": "Configuring Visual Studios",
+            "caption": "View code changes for a story or defect quickly by integrating VersionOne with your source code manager.",
+            "mimetype": "video/x-flv",
+            "href": "http://vtv.v1host.com/permalink/?title=Configuring%20Visual%20Studio&category=Integrations&edition=enterprise&release=undefined",
+            "thumbhref": "http://legacy.community.versionone.com/attachments/imagefolder/gettingstarted/video.png"
+        },
+        {
+            "title": "IDE: Visual Studios",
+            "caption": "View code changes for a story or defect quickly by integrating VersionOne with your source code manager.",
+            "mimetype": "video/x-flv",
+            "href": "http://vtv.v1host.com/permalink/?title=IDE%3A%20Visual%20Studio&category=Integrations&edition=enterprise&release=undefined",
+            "thumbhref": "http://legacy.community.versionone.com/attachments/imagefolder/gettingstarted/video.png"
+        }
+    ]
+}
